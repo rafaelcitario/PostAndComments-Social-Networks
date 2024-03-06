@@ -1,0 +1,9 @@
+.wrapper {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  justify-content: center;
+  padding: 2rem 10rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
