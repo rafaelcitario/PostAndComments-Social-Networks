@@ -1,0 +1,66 @@
+.commentBox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 1rem;
+}
+
+.commentContent {
+  background-color: var(--gray-600);
+  width: 100%;
+  min-height: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  gap: 1rem;
+}
+
+.commentContent>header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header strong {
+  font-size: .875rem;
+  color: var(--gray-200);
+  font-weight: bold;
+  line-height: 1.6;
+  display: block;
+}
+
+header time {
+  font-size: .75rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+  display: block;
+}
+
+header button {
+  background-color: transparent;
+  font-size: 1rem;
+  border: none;
+  line-height: 0;
+  color: var(--gray-400);
+  cursor: grabbing;
+}
+
+header button:hover {
+  color: var(--red-500);
+}
+
+header button:focus {
+  background-color: transparent;
+  border: none;
+  line-height: 0;
+  color: var(--gray-400);
+  cursor: grab;
+}
+
+.commentContent p {
+  font-size: .875rem;
+  line-height: 1.6;
+  color: var(--gray-300);
+}
