@@ -64,3 +64,8 @@ header button:focus {
   line-height: 1.6;
   color: var(--gray-300);
 }
+
+.aplaudir {
+  display: block;
+
+}

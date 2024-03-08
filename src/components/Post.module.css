@@ -92,7 +92,19 @@
   text-wrap: wrap;
 }
 
-.formFooter button[type='Submit'] {
+.formFooter:focus-within .publishButtonContainer {
+  visibility: visible;
+  max-height: none;
+  margin-bottom: 3rem;
+}
+
+.formFooter .publishButtonContainer {
+  visibility: hidden;
+  max-height: 0;
+  transition: margin .5s, height .9s;
+}
+
+.formFooter .publishButtonContainer button[type='Submit'] {
   background-color: var(--green-500);
   border-radius: 8px;
   border: none;
@@ -101,7 +113,11 @@
   font-weight: bold;
 }
 
-.formFooter button[type='Submit']:hover {
+.formFooter .publishButtonContainer button[type='Submit']:disabled {
+  opacity: .4;
+}
+
+.formFooter .publishButtonContainer button[type='Submit']:not(:disabled):hover {
   background-color: var(--green-300);
   cursor: pointer;
   transition: background .1s ease-in-out;
