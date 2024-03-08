@@ -1,14 +1,14 @@
 .commentBox {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   gap: 1rem;
 }
 
 .commentContent {
   background-color: var(--gray-600);
-  width: 100%;
+  width: 40rem;
   min-height: 7.5rem;
   display: flex;
   flex-direction: column;
@@ -16,6 +16,7 @@
   border-radius: 8px;
   border: none;
   gap: 1rem;
+  overflow-wrap: break-word;
 }
 
 .commentContent>header {
@@ -65,7 +66,38 @@ header button:focus {
   color: var(--gray-300);
 }
 
-.aplaudir {
-  display: block;
+.clapsAndNumberClaps {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .625rem;
+  padding: 1rem 0;
 
 }
+
+.clapsAndNumberClaps button {
+  display: flex;
+  color: var(--gray-400);
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  gap: .625rem;
+  cursor: pointer;
+}
+
+.clapped {
+  fill: var(--green-500);
+}
+
+.clapsAndNumberClaps span {
+  font-size: 1rem;
+  color: var(--gray-400);
+  text-align: center;
+  position: relative;
+  bottom: calc(0px - 1px);
+
+}
+
+clapsAndNumberClaps span::before {}

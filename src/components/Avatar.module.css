@@ -6,3 +6,7 @@
   outline: 2px solid var(--green-500);
   object-fit: cover;
 }
+
+.avatar:has(hasBorder) {
+  background-color: red;
+}
