@@ -3,9 +3,9 @@ interface AvatarProps {
   src: string,
   hasBorder?: boolean
 }
-export function Avatar({ src, ...props }: AvatarProps) {
+export function Avatar({ src, hasBorder }: AvatarProps) {
 
   return (
-    <img className={styles.avatar} src={src} alt="" />
+    <img className={hasBorder ? styles.avatar : styles.avatarHasNoBorder} src={src} alt="" />
   )
 }

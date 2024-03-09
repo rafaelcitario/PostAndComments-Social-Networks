@@ -7,6 +7,9 @@
   object-fit: cover;
 }
 
-.avatar:has(hasBorder) {
-  background-color: red;
+.avatarHasNoBorder {
+  width: calc(3rem + 12px);
+  height: calc(3rem + 12px);
+  border-radius: 8px;
+  object-fit: cover;
 }
