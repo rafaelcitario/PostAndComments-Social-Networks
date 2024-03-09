@@ -1,15 +1,12 @@
 .commentBox {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  width: 100%;
   gap: 1rem;
 }
 
 .commentContent {
   background-color: var(--gray-600);
-  width: 40rem;
-  min-height: 7.5rem;
+  min-width: 40rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -98,4 +95,11 @@ header button:focus {
   position: relative;
   bottom: calc(0px - 1px);
 
+}
+
+
+@media (max-width: 768px) {
+  .commentContent {
+    min-width: 20rem;
+  }
 }

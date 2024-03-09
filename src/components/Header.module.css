@@ -10,20 +10,3 @@
 .header img {
   height: 3rem;
 }
-
-.navbar>ul {
-  display: flex;
-  text-decoration: none;
-  gap: 1rem;
-}
-
-.navbar>ul>li {
-  text-decoration: none;
-  list-style: none;
-}
-
-.navbar>ul>li>a {
-  font-size: .875rem;
-  color: var(--gray-100);
-  text-decoration: none;
-}
